@@ -1,8 +1,3 @@
-/* ============================================================
-   Site logic — you shouldn't need to edit this file.
-   Add your projects and skills in projects.js instead. ✏️
-   ============================================================ */
-
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* ---------- Render project cards from projects.js ---------- */

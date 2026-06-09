@@ -1,22 +1,3 @@
-/* ============================================================
-   YOUR PROJECTS LIVE HERE ✏️
-   ============================================================
-   To add a project, copy one of the blocks below (everything
-   from `{` to `},`) and fill in your own info. The website
-   updates automatically — no other file needs to change.
-
-   Field guide:
-     title       — the project's name (required)
-     description — 1–3 sentences about what it does (required)
-     tags        — list of technologies used (shows as little chips)
-     emoji       — a big icon shown on the card (pick any emoji!)
-     image       — OPTIONAL: a screenshot/GIF instead of the emoji.
-                   Put the file in the images/ folder, then write
-                   e.g.  image: "images/myproject.png",
-     demo        — OPTIONAL: link to a live demo or video
-     github      — OPTIONAL: link to the source code
-   ============================================================ */
-
 const projects = [
 
   {
@@ -47,10 +28,6 @@ const projects = [
 
 ];
 
-/* ============================================================
-   YOUR SKILLS ✏️  — shown as floating chips in the Skills section.
-   Add, remove, or reorder freely.
-   ============================================================ */
 const skills = [
   "JavaScript",
   "TypeScript",
