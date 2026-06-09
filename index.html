@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethan Largo — Software Developer</title>
+  <meta name="description" content="Portfolio of Ethan Largo, software developer. Projects, experiments, and things I've built." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ambient background glow orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <nav class="nav-inner">
+      <a href="#top" class="nav-logo">EL<span class="accent-dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-content" id="hero-content">
+        <p class="hero-eyebrow load-in" style="--d: 0">Hello, I'm</p>
+        <h1 class="hero-title load-in" style="--d: 1">Ethan Largo<span class="accent-dot">.</span></h1>
+        <p class="hero-subtitle load-in" style="--d: 2">Software &amp; Web Developer</p>
+        <p class="hero-tagline load-in" style="--d: 3">
+          I build full-stack apps and use AI to turn real problems
+          into working solutions. This is where I keep what I've made.
+        </p>
+        <div class="hero-actions load-in" style="--d: 4">
+          <a href="#projects" class="btn btn-primary">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint load-in" style="--d: 5" aria-label="Scroll down">
+        <span class="scroll-hint-text">scroll</span>
+        <span class="scroll-hint-line"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">About me</p>
+        <h2 class="section-title reveal">A little bit about<br />who I am.</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <!--  EDIT YOUR BIO HERE -->
+            <p>
+              I'm Ethan, a recent graduate of Tri-County Technical College
+              with an Associate of Applied Science in Software and Web
+              Development. I build full-stack web and mobile apps with React,
+              React Native, Node.js, and SQL databases.
+            </p>
+            <p>
+              What drives me is using AI to create solutions to real
+              problems — not tech for its own sake, but tools people actually
+              use. I care about clean code, simple interfaces, and projects
+              that get finished.
+            </p>
+          </div>
+          <div class="about-cards">
+            <div class="about-card reveal">
+              <span class="about-card-icon">⚡</span>
+              <h3>Builder mindset</h3>
+              <p>I learn best by making real things and shipping them.</p>
+            </div>
+            <div class="about-card reveal">
+              <span class="about-card-icon">🤖</span>
+              <h3>AI-powered</h3>
+              <p>I use AI as a tool to solve real problems, faster.</p>
+            </div>
+            <div class="about-card reveal">
+              <span class="about-card-icon">🎓</span>
+              <h3>Strong foundation</h3>
+              <p>A.A.S. in Software &amp; Web Development — 3.9 GPA.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Projects</p>
+        <h2 class="section-title reveal">Things I've built.</h2>
+        <p class="section-sub reveal">
+          A selection of my work — click through for demos and source code.
+        </p>
+        <!-- Cards are generated from projects.js -->
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <p class="section-eyebrow reveal">Skills</p>
+        <h2 class="section-title reveal">What I work with.</h2>
+        <!-- Chips are generated from projects.js (the `skills` list) -->
+        <div class="skills-cloud" id="skills-cloud"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="section-inner contact-inner">
+        <p class="section-eyebrow reveal">Contact</p>
+        <h2 class="section-title reveal">Let's make<br />something together.</h2>
+        <p class="section-sub reveal">
+          Have a project, a question, or just want to say hi? My inbox is open.
+        </p>
+        <a href="mailto:elargobusiness@gmail.com" class="btn btn-primary btn-big reveal">
+          elargobusiness@gmail.com
+        </a>
+        <div class="contact-links reveal">
+          <a href="https://github.com/Ethanolargo" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+          <a href="https://linkedin.com/in/ethan-largo-5055a020a" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ethan Largo. Built from scratch with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
