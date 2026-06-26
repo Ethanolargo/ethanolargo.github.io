@@ -87,7 +87,7 @@ function setupScrollEffects() {
       const y = window.scrollY;
       nav.classList.toggle("scrolled", y > 24);
 
-      // Hero drifts up and fades as you scroll past it (Apple-style)
+      // Hero drifts up and fades as you scroll past it
       if (!reduceMotion && y < window.innerHeight) {
         hero.style.transform = `translateY(${y * 0.3}px)`;
         hero.style.opacity = Math.max(0, 1 - y / (window.innerHeight * 0.65));
